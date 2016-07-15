@@ -1,0 +1,46 @@
+#!usr/bin/python
+#Area y perimetro de un rectangulo (Arper.py)
+def area(b,h):
+    A=b*h
+    return A
+def perimetro(b,h):
+    P=2*(b+h)
+    return P
+print("PROGRAMA QUE DETERMINA EL AREA Y PERIMETRO DE UN RECTANGULO")
+x=float(input("Ingrese el valor de la base b: "))
+y=float(input("Ingrese el valor de la altura h: "))
+print ("El area del rectangulo es: {}".format(area(x,y)))
+print ("El perimetro del rectangulo es: {}".format(perimetro(x,y)))
+#!usr/bin/python
+#Area y perimetro de un cuadrado (Arpe.py)
+def area(l):
+    A=l**2
+    return A
+def perimetro(l):
+    P=4*l
+    return P
+print("PROGRAMA QUE DETERMINA EL AREA Y PERIMETRO DE UN CUADRADO")
+x=float(input("Ingrese el lado del cuadrado l: "))
+print("El area del cuadrado es: {}".format(area(x)))
+print("El perimetro del cuadrado es: {}".format(perimetro(x)))
+#Triangulo
+print ("PROGRAMA QUE DETERMINA SI 3 LONGITUDES FORMAN UN TRIANGULO Y QUE TIPO DE TRIANGULO ES ")
+print ()
+def triangulo(x,y,z):
+   if(x<(y+z) and y<(x+z) and z<(x+y) and x>(z-y) and y>(z-x) and z>(x-y)):
+      print("El triangulo formado por las longitudes: {},{} y {} si existe".format(x,y,z))
+      if(x==y and y==z):
+        print("Es equilatero".format(x,y,z))
+      else:
+         if(x!=y and y!=z and x!=z):
+           print("Es escaleno".format(x,y,z))
+         else:
+            print("Es isosceles".format(x,y,z))
+   else:
+      print("El triangulo formado por las longitudes: {},{} y {} no existe".format(x,y,z))
+a=int(input("Ingrese la primera longitud: "))
+b=int(input("Ingrese la segunda longitud: "))
+c=int(input("Ingrese la tercera longitud: "))
+triangulo(a,b,c)
+
+
